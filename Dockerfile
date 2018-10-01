@@ -26,6 +26,7 @@ RUN add-apt-repository ppa:bitcoin/bitcoin && \
           rm -rf /var/lib/apt/lists/* && apt-get clean
 
 COPY ./midasd /usr/local/bin/
+COPY ./midas-cli /usr/local/bin/
 
 VOLUME ["/root/.midas"]
 
